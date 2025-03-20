@@ -7,14 +7,14 @@ function main(){
     // const reverseStr:string ="hello"
     // console.log(reverseString(reverseStr))
 
-    // const vowelsCount:number=countVowels("hello")
-    // console.log(vowelsCount)
+    const vowelsCount:number=countVowels("hello")
+    console.log("Vowels count:",vowelsCount)
 
-    // const missingNumber:number[]=findMissingNumbers([2,4,311,10,6])
-    // console.log(missingNumber.length>0?"Missing Numbers: "+missingNumber:"No missing number")
+    const missingNumber:number[]|null=findMissingNumbers([2,4,311,10,6])
+    console.log(missingNumber===null?"No missing number":"Missing Numbers: "+missingNumber)
 
-    const nonRepeatingChar:string=firstNonRepeatingChar("aab")
-    console.log("hello: ",nonRepeatingChar)
+    const nonRepeatingChar:string|null=firstNonRepeatingChar("aab")
+    console.log(nonRepeatingChar===null?"No character found":"Non repeating chararcter found:"+nonRepeatingChar)
 }
 
 
