@@ -1,4 +1,4 @@
-export function firstNonRepeatingChar(str:string):string{
+export function firstNonRepeatingChar(str:string):string|null{
     //O(n^2)
     //this works because of lastIndexOf in javaScript
     // for(let i = 0; i < str.length; i++){
@@ -23,5 +23,5 @@ export function firstNonRepeatingChar(str:string):string{
             return str[i];
         }
     }
-    return '';
+    return null;
 }
