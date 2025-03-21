@@ -10,7 +10,7 @@ export function firstNonRepeatingChar(str:string):string|null{
     // O(n^2) approach
     for (let i = 0; i < str.length; i++) {
         // the reason i didn't use j=i+1 is because for example, if the string is "aab" the second "a" is considered non repeating
-        let j = i + 1;
+        let j = 0;
         while (j < str.length) {
             // If str[i] matches str[j] and i !== j, then str[i] is not unique, so break
             if (i !== j && str[i] === str[j]) {
